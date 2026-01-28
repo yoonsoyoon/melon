@@ -4,7 +4,7 @@
     a{
         display: flex;
         padding: 10px;
-        margin: 10px;
+        margin: 10px 160px;
 
         em{
             width: 40px;
@@ -15,12 +15,11 @@
             animation: ani 20s 20s ease-in-out infinite;
         }
 
-        span{
-            font-size: 20px;
-            line-height: 1;
-            font-weight: 900;
-            text-transform: uppercase;
+        img{
+            width: 140px;
+            height: 40px;
         }
+
     }
 }
 
