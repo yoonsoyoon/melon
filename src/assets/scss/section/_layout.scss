@@ -5,7 +5,6 @@
     width: 260px;
     height: 100%;
     z-index: 100000;
-    background-color: black;
 }
 
 #main{
@@ -13,11 +12,9 @@
     max-height: 100vh;
     margin: 0 auto;
     padding-left: 260px;
-    background-color: #111;
 }
 
 #footer{
     text-align: center;
-    background-color: #333;
     padding: 20px 20px 20px 260px;
 }
