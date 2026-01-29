@@ -1,12 +1,10 @@
 import React from 'react'
 
-
+import Top from '../header/Top'
 import Logo from '../header/Logo'
 import Menu from '../header/Menu'
-import Sns from '../header/Sns'
 import Search from '../header/Search'
-
-
+import {headerMenus} from 'C:/Users/ds/Desktop/melon/src/data/header.js'
 
 
 const Header = () => {
@@ -15,10 +13,12 @@ const Header = () => {
 
   return (
     <header id='header' role='banner'>
-        <Logo/>
-        <Search/>
-        <Menu/>
-        <Sns/>
+        <Top/>
+        <div className='logo-search'>
+          <Logo/>
+          <Search/>        
+        </div>
+        <Menu items={headerMenus}/>
     </header>
   )
 }

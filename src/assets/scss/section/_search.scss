@@ -1,31 +1,33 @@
 .search__inner{
     position: relative;
+    display: inline-block;
+    width: 400px;
+
+
+
+  input {
     width: 100%;
-    height: 80px;
-    padding: 17px 40px;
-    border-bottom: 1px solid var(--black200);
+    height: 40px;   
+    background-color: var(--white);
+    border: 3px solid #01B925;
+    padding: 8px 40px 8px 15px; // 오른쪽 공간 확보
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--black);
+    box-sizing: border-box;     // padding 포함 계산
+  }
 
-    label{
-        width: 24px;
-        height: 24px;
-        background-image: url(C:\Users\ds\Desktop\melon\src\assets\icon\imgi_70_btn_gnb_finder@3x.png);
-        position: absolute;
-        left: 53px;
-        top: 28px;
-        background-size: cover;
-    }
-
-    input{
-        background-color: var(--white);
-        border: 1px solid var(--black);
-        width: 500px;
-        padding: 14px 45px;
-        border-radius: 40px;
-        font-size: 16px;
-        color: var(--black);
-    }
-
+  .search-icon {
+    position: absolute;
+    right: 15px;                // input 오른쪽 안쪽
+    top: 50%;                   // 부모 높이의 절반
+    transform: translateY(-50%); // 세로 중앙 정렬
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+  }
 }
+
 
 @media (max-width:800px){
     .search__inner{
